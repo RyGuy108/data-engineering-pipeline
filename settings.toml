@@ -1,0 +1,10 @@
+# NWS station IDs: Austin, Chicago, and New York.
+stations = ["KAUS", "KORD", "KJFK"]
+initial_hours = 24
+overlap_hours = 2
+user_agent = "weather-data-pipeline/0.1 (local educational project)"
+
+[health]
+max_observation_age_minutes = 180
+max_run_age_minutes = 120
+max_rejection_pct = 5

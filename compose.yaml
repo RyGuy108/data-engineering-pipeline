@@ -1,0 +1,26 @@
+services:
+  pipeline:
+    build: .
+    image: weather-data-pipeline:local
+    init: true
+    volumes:
+      - type: bind
+        source: ${WEATHER_DATA_DIR:-./data}
+        target: ${WEATHER_DATA_DIR:-/app/data}
+      - ./settings.toml:/app/settings.toml:ro
+    command: ["--data-dir", "${WEATHER_DATA_DIR:-/app/data}", "schedule", "--interval-minutes", "60", "--with-dashboard"]
+    restart: unless-stopped
+    stop_grace_period: 90s
+    cpus: 2
+    mem_limit: 2g
+    healthcheck:
+      test: ["CMD", "weather-pipeline", "--data-dir", "${WEATHER_DATA_DIR:-/app/data}", "health"]
+      interval: 60s
+      timeout: 15s
+      retries: 3
+      start_period: 180s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"

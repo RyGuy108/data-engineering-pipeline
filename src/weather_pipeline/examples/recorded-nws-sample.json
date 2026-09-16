@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "source": "recorded_nws_demo",
+  "description": "Exact archived public NWS observation payloads captured on 2026-09-13; initial and incremental subsets from three stations. Historical replay only, not a live weather feed. No accepted synthetic measurements.",
+  "station_metadata": [
+    {
+      "latitude": 30.18304,
+      "longitude": -97.67987,
+      "name": "Austin-Bergstrom International Airport",
+      "station_id": "KAUS"
+    },
+    {
+      "latitude": 40.63915,
+      "longitude": -73.76393,
+      "name": "New York, Kennedy International Airport",
+      "station_id": "KJFK"
+    },
+    {
+      "latitude": 41.97972,
+      "longitude": -87.90444,
+      "name": "Chicago, Chicago-O'Hare International Airport",
+      "station_id": "KORD"
+    }
+  ],
+  "source_batches": [
+    {
+      "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+      "ingested_at": "2026-09-13T22:48:52.877116Z",
+      "start": "2026-09-12T22:48:52.876605Z",
+      "end": "2026-09-13T22:48:52.876605Z",
+      "raw_sha256": "6c87d373cec4c3e5797de430cc76fa5416b8c68d98273038b52822c6443e1e1e",
+      "record_count": 838,
+      "source": "nws",
+      "source_request": {
+        "base_url": "https://api.weather.gov",
+        "max_window_hours": 6,
+        "page_limit": 500,
+        "window_semantics": "[start,end)"
+      },
+      "stations": [
+        {
+          "latitude": 30.18304,
+          "longitude": -97.67987,
+          "name": "Austin-Bergstrom International Airport",
+          "station_id": "KAUS"
+        },
+        {
+          "latitude": 40.63915,
+          "longitude": -73.76393,
+          "name": "New York, Kennedy International Airport",
+          "station_id": "KJFK"
+        },
+        {
+          "latitude": 41.97972,
+          "longitude": -87.90444,
+          "name": "Chicago, Chicago-O'Hare International Airport",
+          "station_id": "KORD"
+        }
+      ],
+      "windows": [
+        {
+          "end": "2026-09-13T22:48:52.876605Z",
+          "start": "2026-09-12T22:48:52.876605Z",
+          "station_id": "KAUS"
+        },
+        {
+          "end": "2026-09-13T22:48:52.876605Z",
+          "start": "2026-09-12T22:48:52.876605Z",
+          "station_id": "KJFK"
+        },
+        {
+          "end": "2026-09-13T22:48:52.876605Z",
+          "start": "2026-09-12T22:48:52.876605Z",
+          "station_id": "KORD"
+        }
+      ]
+    },
+    {
+      "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+      "ingested_at": "2026-09-13T23:10:58.232781Z",
+      "start": "2026-09-13T20:48:52.876605Z",
+      "end": "2026-09-13T23:10:58.232165Z",
+      "raw_sha256": "6c79a1da50cc889d65a8f8f4c53424bdbc1751b7747c14e373e7f08229c2d366",
+      "record_count": 78,
+      "source": "nws",
+      "source_request": {
+        "base_url": "https://api.weather.gov",
+        "max_window_hours": 6,
+        "page_limit": 500,
+        "window_semantics": "[start,end)"
+      },
+      "stations": [
+        {
+          "latitude": 30.18304,
+          "longitude": -97.67987,
+          "name": "Austin-Bergstrom International Airport",
+          "station_id": "KAUS"
+        },
+        {
+          "latitude": 40.63915,
+          "longitude": -73.76393,
+          "name": "New York, Kennedy International Airport",
+          "station_id": "KJFK"
+        },
+        {
+          "latitude": 41.97972,
+          "longitude": -87.90444,
+          "name": "Chicago, Chicago-O'Hare International Airport",
+          "station_id": "KORD"
+        }
+      ],
+      "windows": [
+        {
+          "end": "2026-09-13T23:10:58.232165Z",
+          "start": "2026-09-13T20:48:52.876605Z",
+          "station_id": "KAUS"
+        },
+        {
+          "end": "2026-09-13T23:10:58.232165Z",
+          "start": "2026-09-13T20:48:52.876605Z",
+          "station_id": "KJFK"
+        },
+        {
+          "end": "2026-09-13T23:10:58.232165Z",
+          "start": "2026-09-13T20:48:52.876605Z",
+          "station_id": "KORD"
+        }
+      ]
+    }
+  ],
+  "batches": {
+    "initial": {
+      "source_batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+      "records": [
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:15:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:15:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101320.75},\"cloudLayers\":[{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":2133.6}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3352.8}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":21},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":39.79124721612222},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":41.807631144761},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":36},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:15:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":null},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "26e83c30582a752831b7427264ab132f63171644ecbbc5f249c62dce1d9dd01b"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:20:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:20:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101354.61},\"cloudLayers\":[{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":2133.6}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3352.8}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":21},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":39.79124721612222},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":41.807631144761},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":36},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:20:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":null},\"windGust\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":48.168},\"windSpeed\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "6324cb644a905ddc5eb9c59339063365420bd3263bad19dd3afc9fdeddb3b9f2"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:25:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:25:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101320.75},\"cloudLayers\":[{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":2133.6}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3352.8}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":39.53050523310556},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":46.969634378072},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":35},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:25:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":null},\"windGust\":{\"qualityControl\":\"S\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":53.712},\"windSpeed\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "7b0687d4625c807b9a377cb48bd722a50152176d32d6fe5a3eac372acb7dcc73"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:30:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:30:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101320.75},\"cloudLayers\":[{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":2133.6}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3352.8}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":21},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":38.551144777316665},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":44.180823739166},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":35},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:30:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":null},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "ac3a3fc795cb323d3d728e22a7803a912b63a6d6857c525247a3689dab197e9c"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:15:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:15:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101049.84},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1371.6}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.734596362945},\"icon\":\"https://api.weather.gov/icons/land/day/few?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":83.452626665984},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Mostly Clear\",\"timestamp\":\"2026-09-13T22:15:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":180},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":7.416}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "2f7323b8866d45dc89738bf629a331603c386966e2a59a05ca167fdadc43db43"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:20:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:20:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101049.84},\"cloudLayers\":[{\"amount\":\"SCT\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1371.6}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.734596362945},\"icon\":\"https://api.weather.gov/icons/land/day/sct?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":83.452626665984},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Partly Cloudy\",\"timestamp\":\"2026-09-13T22:20:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":180},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":7.416}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "cf90ff3d3e6a9ab2c32bcf40b2147c71bbe2350fae890960f894bc37c20f9748"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:25:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:25:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101049.84},\"cloudLayers\":[{\"amount\":\"SCT\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1432.56}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.734596362945},\"icon\":\"https://api.weather.gov/icons/land/day/sct?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":83.452626665984},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Partly Cloudy\",\"timestamp\":\"2026-09-13T22:25:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":200},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":7.416}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "e930fe6b2622fa004ac63032787c56cea132e85b06fb38ff8266155385378523"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:30:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:30:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101049.84},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1432.56}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.734596362945},\"icon\":\"https://api.weather.gov/icons/land/day/few?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":83.452626665984},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Mostly Clear\",\"timestamp\":\"2026-09-13T22:30:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":170},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":7.416}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "87dece892f471d05b62aa4b017df3296bf186e4a03d8abe2e22db341eb840605"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:20:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:20:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101998.03},\"cloudLayers\":[{\"amount\":\"CLR\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3810}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":10},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/skc?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":59.52339300817},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":18},\"textDescription\":\"Clear\",\"timestamp\":\"2026-09-13T22:20:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":290},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":12.96}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "2aa99bb9d2ed74fa21e3ce0361030d51129697a47a385864ec2b74796702a555"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:25:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:25:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101998.03},\"cloudLayers\":[{\"amount\":\"CLR\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3810}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":10},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/skc?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":59.52339300817},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":18},\"textDescription\":\"Clear\",\"timestamp\":\"2026-09-13T22:25:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":300},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":14.832}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "13f568c9cba88877338cc3219696b049c9b369a8c4b47b3a0fded7d6762afdb0"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:30:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:30:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101998.03},\"cloudLayers\":[{\"amount\":\"CLR\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3810}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":9},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/skc?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":55.656762504377},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":18},\"textDescription\":\"Clear\",\"timestamp\":\"2026-09-13T22:30:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":300},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":14.832}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "b744d8aceecf7e444bdeb983e2dbcb1e0174871cd6cd42e2c54b838588d008bf"
+        },
+        {
+          "batch_id": "20260913T224852877116Z-ec4a6964738c4c8abfe25b204d02ef12",
+          "ingested_at": "2026-09-13T22:48:52.877116Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:35:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:35:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101998.03},\"cloudLayers\":[{\"amount\":\"CLR\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3810}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":9},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/skc?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":55.656762504377},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":18},\"textDescription\":\"Clear\",\"timestamp\":\"2026-09-13T22:35:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":300},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":12.96}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "024a27b0552c5aa98df99a11f8cd34380423433e14ca4414708d178a0f05052b"
+        }
+      ]
+    },
+    "followup": {
+      "source_batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+      "records": [
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:30:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:30:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101320.75},\"cloudLayers\":[{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":2133.6}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3352.8}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":21},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":38.551144777316665},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":44.180823739166},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":35},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:30:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":null},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "ac3a3fc795cb323d3d728e22a7803a912b63a6d6857c525247a3689dab197e9c"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:50:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:50:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101320.75},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1676.4}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":38.2771737701},\"icon\":\"https://api.weather.gov/icons/land/day/few?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":49.655633948043},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":34},\"textDescription\":\"Mostly Clear\",\"timestamp\":\"2026-09-13T22:50:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":null},\"windGust\":{\"qualityControl\":\"S\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":33.336},\"windSpeed\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "32e8c4090b96a6a3dd6ef8c5854a436f686fd1bbd3ddbd0c2aa237147f717a97"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-97.67,30.19],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:53:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KAUS/observations/2026-09-13T22:53:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101320},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1680}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":9140}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":21.7},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":165},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":38.47536868148333},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"precipitationLast6Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"precipitationLastHour\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:mm\",\"value\":0},\"presentWeather\":[],\"rawMessage\":\"KAUS 132253Z 15014G23KT 10SM FEW055 BKN300 34/22 A2992 RMK AO2 PK WND 14029/2225 RAE14 SLP121 OCNL LTG DSNT SW P0000 T03440217\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":47.679662624014},\"seaLevelPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101210},\"station\":\"https://api.weather.gov/stations/KAUS\",\"stationId\":\"KAUS\",\"stationName\":\"Austin-Bergstrom International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":34.4},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:53:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16090},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":150},\"windGust\":{\"qualityControl\":\"S\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":42.48},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":25.92}},\"type\":\"Feature\"}",
+          "station_id": "KAUS",
+          "payload_sha256": "971a7e9ed6781f952ec9ab13c67fd575a6f13d7af22dd21e1b6cb5debb85ede3"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:30:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:30:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101049.84},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1432.56}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.734596362945},\"icon\":\"https://api.weather.gov/icons/land/day/few?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":83.452626665984},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Mostly Clear\",\"timestamp\":\"2026-09-13T22:30:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":170},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":7.416}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "87dece892f471d05b62aa4b017df3296bf186e4a03d8abe2e22db341eb840605"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:50:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:50:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101083.7},\"cloudLayers\":[{\"amount\":\"SCT\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":944.88}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1188.72}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":22},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.734596362945},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":83.452626665984},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:50:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":180},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":5.544}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "e186f6bc7d910b0ca46bb3cc2757ce8b5060c8023cba1f449d9cabb08fa3bb38"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-73.78,40.65],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:51:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KJFK/observations/2026-09-13T22:51:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101080},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":760}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1010}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":2440}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":7620}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":21.7},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":7},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25.695051359253334},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"precipitationLast6Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"precipitationLastHour\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"KJFK 132251Z 19003KT 10SM FEW025 BKN033 BKN080 BKN250 25/22 A2985 RMK AO2 SLP107 T02500217 $\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":81.938137162883},\"seaLevelPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101070},\"station\":\"https://api.weather.gov/stations/KJFK\",\"stationId\":\"KJFK\",\"stationName\":\"New York, Kennedy International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":25},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:51:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16090},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":190},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":5.4}},\"type\":\"Feature\"}",
+          "station_id": "KJFK",
+          "payload_sha256": "f0f011bb7c16bd358354b87ebbb88ce1de0c0294018a73278c2c6d5fb57a1a22"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:35:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:35:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101998.03},\"cloudLayers\":[{\"amount\":\"CLR\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3810}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":9},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/skc?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":55.656762504377},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":18},\"textDescription\":\"Clear\",\"timestamp\":\"2026-09-13T22:35:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":300},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":12.96}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "024a27b0552c5aa98df99a11f8cd34380423433e14ca4414708d178a0f05052b"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:50:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:50:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101998.03},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1158.24}},{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3048}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":11},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/few?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":63.624996508331},\"seaLevelPressure\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:Pa\",\"value\":null},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":18},\"textDescription\":\"Mostly Clear\",\"timestamp\":\"2026-09-13T22:50:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16093.44},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":310},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":11.124}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "4d0244ff0210da0464052d1f80f9e6f51e464e6c9a17936e248c822c691cb45f"
+        },
+        {
+          "batch_id": "20260913T231058232781Z-fc28d3267b034f3b8b5a785c58966c4d",
+          "ingested_at": "2026-09-13T23:10:58.232781Z",
+          "raw_json": "{\"geometry\":{\"coordinates\":[-87.9,41.98],\"type\":\"Point\"},\"id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:51:00+00:00\",\"properties\":{\"@id\":\"https://api.weather.gov/stations/KORD/observations/2026-09-13T22:51:00+00:00\",\"@type\":\"wx:ObservationStation\",\"barometricPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":102000},\"cloudLayers\":[{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":1160}},{\"amount\":\"FEW\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":3050}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":4880}},{\"amount\":\"BKN\",\"base\":{\"unitCode\":\"wmoUnit:m\",\"value\":7620}}],\"dewpoint\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":10.6},\"elevation\":{\"unitCode\":\"wmoUnit:m\",\"value\":205},\"heatIndex\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"icon\":\"https://api.weather.gov/icons/land/day/bkn?size=medium\",\"maxTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"minTemperatureLast24Hours\":{\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"precipitationLast3Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"precipitationLast6Hours\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"precipitationLastHour\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:mm\",\"value\":null},\"presentWeather\":[],\"rawMessage\":\"KORD 132251Z 31006KT 10SM FEW038 FEW100 BKN160 BKN250 18/11 A3012 RMK AO2 SLP198 T01780106 $\",\"relativeHumidity\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:percent\",\"value\":62.739851493171},\"seaLevelPressure\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:Pa\",\"value\":101980},\"station\":\"https://api.weather.gov/stations/KORD\",\"stationId\":\"KORD\",\"stationName\":\"Chicago, Chicago-O'Hare International Airport\",\"temperature\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":17.8},\"textDescription\":\"Mostly Cloudy\",\"timestamp\":\"2026-09-13T22:51:00+00:00\",\"visibility\":{\"qualityControl\":\"C\",\"unitCode\":\"wmoUnit:m\",\"value\":16090},\"windChill\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degC\",\"value\":null},\"windDirection\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:degree_(angle)\",\"value\":310},\"windGust\":{\"qualityControl\":\"Z\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":null},\"windSpeed\":{\"qualityControl\":\"V\",\"unitCode\":\"wmoUnit:km_h-1\",\"value\":11.16}},\"type\":\"Feature\"}",
+          "station_id": "KORD",
+          "payload_sha256": "3af6869d7e63fc71ab48e8467178c46aa2653a4acd6411355a6e92f95f48fd53"
+        }
+      ]
+    }
+  }
+}

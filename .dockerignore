@@ -1,0 +1,14 @@
+.venv
+.runtime
+.runtime-java.tar.gz
+data
+.git
+__pycache__
+.pytest_cache
+backups
+data-*
+artifacts
+.ruff_cache
+*.egg-info
+build
+dist
